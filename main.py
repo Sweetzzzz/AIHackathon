@@ -1,7 +1,7 @@
 from ollama import Client
 
 def main():
-    client = Client(host='http://localhost:11434')
+    client = Client(host='https://worthy-refined-gobbler.ngrok-free.app')
     for part in client.chat(model='syssum', stream=True, messages=[
     {
         'role': 'user',
