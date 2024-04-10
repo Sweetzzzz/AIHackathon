@@ -1,12 +1,22 @@
 # AIHackathon
 
 Problem:
-
+- Students have giant workloads and often *feel* like they have no time to study
+    - Many juggle several responsibilities alongside school
+        - Work, extracurriculars, familial obligations, and also require time to relax
+        - Many studies [insert reference] encourage students to spend at least 2 hours a day studying 
+-      Keyword is *feel*?
+-  Studying takes 10–13 hours/week
 
 
 Solution:
-
-
+- With AI, students can visualize and interact with their notes in a new dimension
+- Our product takes an active learning approach, allowing students to engage with their notes
+    - Summarizing notes --> decrease clutter, focus solely on important/key points
+    - Create quizzes/flashcards
+    - Suggestions for better note-taking
+        - Retrieval augmented
+        - Identifies holes in student's knowledge base 
 
 
 Deliverables: 
