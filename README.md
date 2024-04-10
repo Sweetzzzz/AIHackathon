@@ -16,7 +16,8 @@
     - Create quizzes/flashcards
     - Suggestions for better note-taking
         - Retrieval augmented
-        - Identifies holes in student's knowledge base 
+        - Identifies holes in student's knowledge base
+- Uses Ngrok to help students host locally 
 
 
 ## Deliverables: 
