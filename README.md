@@ -1,7 +1,7 @@
 # AIHackathon
 
 ## Problem:
-* Students have giant workloads and often *feel* like they have no time to study
+** Students have giant workloads and often *feel* like they have no time to study
     - Many juggle several responsibilities alongside school
         - Work, extracurriculars, familial obligations, and also require time to relax
         - Many studies [insert reference] encourage students to spend at least 2 hours a day studying 
