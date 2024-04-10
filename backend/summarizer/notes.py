@@ -16,11 +16,12 @@ class NoteChat():
         }
 
     def chat(self, model='syssum', role='user', message=''):
-        return ollama.chat(
+        for part in  ollama.chat(
             model=model,
             stream=True,
             messages=self.notes.append(self.create_message(role=role, message=message)), 
-        )
+        ):
+            yield part
         
 if __name__ == '__main__':
     message = input(">>>")

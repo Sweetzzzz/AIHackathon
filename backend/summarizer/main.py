@@ -1,7 +1,7 @@
-import note_chat
+import backend.summarizer.notes as notes
 
 def main():
-    chat_instance = note_chat.NoteChat(note='light + CO2 = photosynthesis')
+    chat_instance = notes.NoteChat(note='light + CO2 = photosynthesis')
 
     for part in chat_instance.chat(message=input(">>>")):
         print(part['message']['content'], end='', flush=True)
