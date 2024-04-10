@@ -1,0 +1,28 @@
+FROM llama2
+
+PARAMETER mirostat 0
+PARAMETER mirostat_eta 1.5
+PARAMETER mirostat_tau 5.0
+PARAMETER num_ctx 2048
+
+PARAMETER repeat_last_n 64
+PARAMETER repeat_penalty 1.1
+
+PARAMETER temperature .07
+
+PARAMETER top_k 40
+PARAMETER top_p .9
+
+SYSTEM """
+Your job is to learn from the user's notes.
+
+The user will input their notes as messages.
+
+Only use information from the user's messages.
+
+Do not use prior knowledge.
+
+Always cite your sources of information.
+
+If the user asks a question, first refer to their notes.
+"""
