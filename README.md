@@ -1,6 +1,6 @@
 # AIHackathon
 
-Problem:
+##Problem:
 * Students have giant workloads and often *feel* like they have no time to study
     - Many juggle several responsibilities alongside school
         - Work, extracurriculars, familial obligations, and also require time to relax
@@ -9,7 +9,7 @@ Problem:
 -  Studying takes 10–13 hours/week
 
 
-Solution:
+##Solution:
 - With AI, students can visualize and interact with their notes in a new dimension
 - Our product takes an active learning approach, allowing students to engage with their notes
     - Summarizing notes --> decrease clutter, focus solely on important/key points
@@ -19,7 +19,7 @@ Solution:
         - Identifies holes in student's knowledge base 
 
 
-Deliverables: 
+##Deliverables: 
   - Software
       - Front-end aspect (UI)
       - Handwriting recognition
@@ -30,7 +30,7 @@ Deliverables:
       - Skit
       - 
 
-Ethics:
+##Ethics:
   - it's not cheating if it's only using students' notes
   - simply a tool to speed up learning process
   - does not generate new information/content/etc.
