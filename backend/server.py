@@ -58,6 +58,10 @@ def delete_notes():
     response = ollama.delete(name)
     return response
 
+@app.route('/notes', methods=['GET'])
+def list_notes():
+    return ollama.list()
+
 
 
 if __name__ == '__main__':
