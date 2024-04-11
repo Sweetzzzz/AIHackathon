@@ -1,6 +1,7 @@
 import requests
+import json
 
-url = 'http://127.0.0.1:5000/chat'
+url = 'https://worthy-refined-gobbler.ngrok-free.app/chat'
 obj = {
   "model": "llama2",
   "messages": [
@@ -12,4 +13,4 @@ obj = {
 }
 
 for part in requests.post(url=url, json=obj, stream=True):
-    print(part.decode())
+    print(part)
