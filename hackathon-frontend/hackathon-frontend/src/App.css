@@ -1,7 +1,7 @@
 .grid {
   display: grid;
-  grid-template-columns: 10% 90%;
-  grid-template-rows: 50px 75vh 100px;
+  grid-template-columns: 10% 88%;
+  grid-template-rows: 50px 74vh 100px;
   grid-gap: 1em;
 }
 
@@ -10,6 +10,14 @@ footer {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+
+.add-note {
+  position: fixed;
+  top: 90%;
+  left:1%;
+}
+
+
 
 .grid > * {
   background: #1c1b1f;
