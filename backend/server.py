@@ -50,6 +50,14 @@ def upload_notes():
     response = ollama.create(model=name, modelfile=MODELFILE_TEMPLATE+content, stream=False)
     return response
 
+@app.route('/notes', methods=['DELETE'])
+def delete_notes():
+    data = request.get_json()
+    name = data['name']
+
+    response = ollama.delete(name)
+    return response
+
 
 
 if __name__ == '__main__':
