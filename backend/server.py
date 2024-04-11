@@ -5,6 +5,24 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+MODELFILE_TEMPLATE='''
+FROM llama2
+
+
+SYSTEM """
+Only use information provided in system messages.
+
+Do not use external information.
+
+Cite all sources.
+
+Before answering a question, ask yourself if the topics are covered in the notes. If not, do not answer the prompt.
+
+Your job is to answer questions about the following notes.
+
+"""
+'''
+
 @app.route('/')
 def home():
     return 'hello, world!'
@@ -22,6 +40,17 @@ def chat():
     resp = Response(stream_with_context(generate()), content_type='application/json')
     # resp.headers.add('Access-Control-Allow-Origin', '*')
     return resp
+
+@app.route('/notes', methods=['POST'])
+def upload_notes():
+    data = request.get_json()
+    name = data['name']
+    content = data ['content']
+
+    response = ollama.create(model=name, modelfile=MODELFILE_TEMPLATE+content, stream=False)
+    return response
+
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
