@@ -1,0 +1,20 @@
+Video Lecture 7a. Photosynthesis basics
+9 February 2024
+Photosynthesis:
+Plants absorb CO2, release O2 → reduce rate of global climate change
+Chlorophyll - magnesium ion at center of reaction absorbs light energy to transfer chemical energy to other parts of photosystem
+
+Nearly all life on earth trace source of energy back to sun 
+
+Photosynthesis - used by certain bacteria, algae (protists), land plants; transfers light to chemical energy stored in bonds of sugar molecules; uses CO2/H2O, produces O2/sugar
+Chloroplasts arose from “inasion” of photosynthetic prokaryotic cells to form symbiosis w/ eukaryotic cells
+Light reaction → chlorophyll in chloroplast membranes absorbs solar energy → chemical energy of ATP/NADPH; water split → source of electrons, release O2
+
+Calvin cycle - uses products of light reactions to make sugar from CO2; ATP = energy for sugar synthesis, NADPH = high-energy electrons for synthesis of glucose from CO2
+
+
+Chloroplasts (Sites of Photosynthesis):
+Has a double-membrane envelope like mitochondrion
+Thylakoid Membranes- interconnected membranous sacs suspended in stroma
+Granum (plural grana) - stacks w/ concentrated thylakoid membranes; stroma surrounding is thick fluid where Calvin cycle occurs
+Chlorophyll molecules that capture light energy built into thylakoid membrane
