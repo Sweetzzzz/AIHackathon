@@ -5,6 +5,16 @@
   grid-gap: 1em;
 }
 
+div {
+  overflow-y:auto;
+  flex-direction: column-reverse;
+}
+
+#logo-image {
+  width: 400px;
+  margin-top: 50px;
+}
+
 header,
 footer {
   grid-column-start: 1;
@@ -17,6 +27,16 @@ footer {
   left:1%;
 }
 
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
 
 
 .grid > * {
