@@ -37,8 +37,10 @@
   - does not generate new information/content/etc.
   - price aspect -> doesn't generate new info so it's cheap computationally
   - can be hosted locally (self-hosting!)
-  - open source! 
+  - open source!
+
+**Development was primarily done on samly100405's machine, however all members of the team made significant contributions**
 
 Server Setup:
-`ngrok http --domain=worthy-refined-gobbler.ngrok-free.app 11434 --host-header="localhost:11434"`
+`ngrok http 127.0.0.1:5000 --domain https://worthy-refined-gobbler.ngrok-free.app/"`
 `ollama serve`
