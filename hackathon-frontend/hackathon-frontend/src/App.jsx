@@ -1,32 +1,41 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { fetchData } from './controllers/summarizers';
-import TextTyper from 'text-type-animation-effect-react'
+import { chat } from './controllers/chat';
 function App() {
+  const [incomingMessage, setIncomingMessage] = useState('')
+  useEffect(
+    () => {
+      console.log("useEffect called")
+      chat('syssum', [{
+        'role': 'user',
+        'content': 'hi',
+      }], setIncomingMessage)
+    }, []
+  )
   
   return (
     <body>
-    <div class="grid text-white">
-    <header>Header</header>
-    <main>
-      <ul>
-        <li>notes</li>
-        <li>notes</li>
-      </ul>
-      <div className="add-note">
-      <input type="file" name="file" accept="image/*"></input>
+      <div className="grid text-white">
+        <header>Header</header>
+        <main>
+          <ul>
+            <li>notes</li>
+            <li>notes</li>
+          </ul>
+          <div className="add-note">
+          <input type="file" name="file" accept="image/*"></input>
+          </div>
+        </main>
+        {/* <aside className=" fixed top-[50%] left-[50%]"><TextTyper text = {"hello world"} in terval = {100} Markup = {"aside"} /></aside> */}
+        <aside className="fixed top[50%] left-[50%]"></aside>
+        <div>
+          {incomingMessage}
+        </div>
+        <footer>
+        <input className="w-[50vw] bg-slate-500 shadow appearance-none border-none rounded-lg h-10 text-white leading-tight focus:outline-none focus:shadow-outline" id="prompt" type="text" placeholder="Enter a prompt to get started"></input>
+        </footer>
       </div>
-    </main>
-    {/* <aside className=" fixed top-[50%] left-[50%]"><TextTyper text = {"hello world"} in terval = {100} Markup = {"aside"} /></aside> */}
-    <aside className="fixed top[50%] left-[50%]"></aside>
-    <div>
-      {jsonData && <div>{jsonData}</div>}
-    </div>
-    <footer>
-     <input className="w-[50vw] bg-slate-500 shadow appearance-none border-none rounded-lg h-10 text-white leading-tight focus:outline-none focus:shadow-outline" id="prompt" type="text" placeholder="Enter a prompt to get started"></input>
-    </footer>
-  </div>
-  </body>
+    </body>
   
   )
 }
