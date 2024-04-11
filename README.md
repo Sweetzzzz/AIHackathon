@@ -16,7 +16,8 @@
     - Create quizzes/flashcards
     - Suggestions for better note-taking
         - Retrieval augmented
-        - Identifies holes in student's knowledge base 
+        - Identifies holes in student's knowledge base
+- Uses Ngrok to help students host locally 
 
 
 ## Deliverables: 
@@ -37,3 +38,7 @@
   - price aspect -> doesn't generate new info so it's cheap computationally
   - can be hosted locally (self-hosting!)
   - open source! 
+
+Server Setup:
+`ngrok http --domain=worthy-refined-gobbler.ngrok-free.app 11434 --host-header="localhost:11434"`
+`ollama serve`
