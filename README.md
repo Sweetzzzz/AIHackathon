@@ -40,5 +40,6 @@
   - open source! 
 
 Server Setup:
-`ngrok http --domain=worthy-refined-gobbler.ngrok-free.app 11434 --host-header="localhost:11434"`
+`ngrok http 127.0.0.1:5000 --domain worthy-refined-gobbler.ngrok-free.app` 
 `ollama serve`
+
